@@ -10,6 +10,7 @@ function MediumCards({img , title}) {
         src={img}
         height="250px"
         width="250px"
+        alt='img'
        />
           <p className='font-semibold'>{title}</p>
     </div>

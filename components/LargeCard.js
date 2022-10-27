@@ -9,7 +9,8 @@ function LargeCard({buttonText, img, title, desc}) {
             className=' rounded-xl '
             src={img}
             layout="fill"
-            objectFit='cover'
+          objectFit='cover'
+          alt='img'
         />
       </div>
       

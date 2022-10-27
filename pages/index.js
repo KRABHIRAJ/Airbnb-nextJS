@@ -17,6 +17,7 @@ export default function Home() {
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 mb-7 mt-5' >
           {exploreData?.map((item) => {
             return <SmallCard 
+              key={item.img}
               distance={item.distance}
               img={item.img}
               location={item.location}
@@ -29,6 +30,7 @@ export default function Home() {
         <div className=' flex space-x-3 lg:space-x-4 xl:space-x-5 my-4 mt-8'>
             {mediumCards.map((data) => {
               return <MediumCards
+                key={data.img}
                 img={data.img} 
                 title={data.title}
                 
@@ -37,6 +39,7 @@ export default function Home() {
         </div>
 
         <LargeCard
+          key="#69"
           img="/images/largeCard.webp"
           title="The Greatest Outdoors"
           desc="Wishlist curated by Airbnb"

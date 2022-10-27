@@ -19,7 +19,7 @@ function search({searchResults}) {
           <div>
         {infoCards.map(({ description, img, lat, long, location, price, star, title, total }) => {
           
-          return <InfoCard description={description} img={img} lat={lat} long={long} location={location} price={price} star={star} title={title} total={total} />
+          return <InfoCard key={ description} description={description} img={img} lat={lat} long={long} location={location} price={price} star={star} title={title} total={total} />
 
           })}
             

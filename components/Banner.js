@@ -12,7 +12,8 @@ function Banner() {
         />
         <div className='absolute flex flex-col w-full top-1/2'>
               <h2 className='font-semibold text-center'>Not sure where to go? Perfect</h2>   
-              <button className='bg-white mx-auto  w-fit px-4 py-2 rounded-full  font-semibold text-[#1a61cc] shadow-sm hover:bg-gray-50 transition-all active:scale-95'>I'm Flexible</button>
+              &apos;      
+            <button className='bg-white mx-auto  w-fit px-4 py-2 rounded-full  font-semibold text-[#1a61cc] shadow-sm hover:bg-gray-50 transition-all active:scale-95'>I'm Flexible</button>
         </div>
         
     </div>

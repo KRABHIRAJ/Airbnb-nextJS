@@ -4,6 +4,7 @@ import { DateRangePicker } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 
 
@@ -48,11 +49,16 @@ function Navbar({placeholder}) {
     
     <div className='sticky top-0 z-50'>
       <div className='bg-white shadow-md flex justify-between items-center p-3 '>
-      <div >
-          <img 
+      <div className='hidden sm:inline-block'>
+          <Image
+            className=' cursor-pointer object-contain'
+            
+            loader={() => "https://logos-download.com/wp-content/uploads/2016/03/Airbnb_logo.png"}
             onClick={() => router.push("/")}
             src="https://logos-download.com/wp-content/uploads/2016/03/Airbnb_logo.png"
-            className='hidden md:inline-block h-8 cursor-pointer object-contain'
+            height={"32px"}
+            width={"90px"}
+            alt="img"
         />
       </div>
       <div className='flex flex-grow items-center justify-between border-2  h-6 py-5 mx-4 rounded-full max-w-xl '>

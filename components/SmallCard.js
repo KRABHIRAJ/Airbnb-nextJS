@@ -11,6 +11,7 @@ function SmallCard({distance, img, location}) {
                   src={img}
                   width="50px"
                   height="50px"
+                  alt='img'
             />
           </div>
         <div className='cursor-pointer'>
